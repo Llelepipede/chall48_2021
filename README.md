@@ -3,4 +3,4 @@
 
 pour run le projet en cas de probleme heroku,
 
-dans le dossier "pythonProject", affecter la commande :"flask run" sur votre terminal.
+dans le dossier "pythonProject", effectuez la commande :"flask run" sur votre terminal.
