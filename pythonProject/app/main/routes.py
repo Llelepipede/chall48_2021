@@ -26,7 +26,7 @@ def ajout_images():
             'image_name': image.filename
         })
 
-    return redirect(url_for('main.connected'))
+    return render_template("index.html")
 
 @main.route('/challenge')
 def challenge():
