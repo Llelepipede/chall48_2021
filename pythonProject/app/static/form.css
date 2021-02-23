@@ -1,6 +1,9 @@
 body{
     margin: 0%;
 }
+.background{
+    background-image:url(https://media.discordapp.net/attachments/785617051661500466/796182493677486120/giphy.gif?width=469&height=469);
+}
 .navbarre {
     border:solid #005c84;
     display: flex;
