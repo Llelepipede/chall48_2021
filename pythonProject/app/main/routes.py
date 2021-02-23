@@ -18,7 +18,6 @@ def ajout_images():
         mongo.save_file(image.filename, image)
         mongo.db.equipe40.insert_one({
             'image_name': image.filename
-
         })
 
     return redirect(url_for('main.index'))
