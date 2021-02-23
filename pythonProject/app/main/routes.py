@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, redirect, url_for, request
-
 from app.extensions import mongo
 
 main = Blueprint('main', __name__)
+
+fs =
 
 
 @main.route('/')
@@ -21,3 +22,11 @@ def ajout_images():
         })
 
     return redirect(url_for('main.index'))
+
+
+@main.route('/bibliotheque')
+def bibliotheque():
+
+    return render_template('biblio.html', list=mongo.db.fs.chunck.find({}))
+
+
