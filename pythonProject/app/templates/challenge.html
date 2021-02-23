@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="..\chall48_2021\connexion.css">
-    <link rel="stylesheet" href="..\chall48_2021\form.css">
-    <script type="javascript" src="..\3chall48_2021\script.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='connexion.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <script type="javascript" src=" {{ url_for('static', filename='script.js') }}"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 
 <body>
     <div class="navbarre">
-        <img class="logo" src="..\chall48_2021\Logo PassionFroid.png" alt="logo navbarre">
+        <img class="logo" src="https://www.groupe-pomona.fr/sites/default/files/reseau/Logo%20PassionFroid.png" alt="logo navbarre">
         
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Connexion</button>
 
@@ -23,7 +23,7 @@
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
-                    <img class = "bonH"src="..\chall48_2021\bonhomme.png" alt="Avatar" class="avatar">
+                    <img class = "bonH"src="https://www.ericandreani.fr/images/bonhomme.png" alt="Avatar" class="avatar">
                 </div>
 
                 <div class="container">
@@ -33,7 +33,7 @@
                     <label for="psw"><b>Mot de passe</b></label>
                     <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
 
-                    <button type="submit">Connexion</button>
+                    <a href ="{{ url_for('templates', filename='index.html')}}"><button type="submit">Connexion</button></a>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Se souvenir
                     </label>
@@ -47,6 +47,7 @@
         </div>
 
     </div>
+    <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fdraaf.pays-de-la-loire.agriculture.gouv.fr%2FIMG%2Fpdf%2FPassion_froid_-_Pomona_cle0671e3.pdf&psig=AOvVaw0aFOF80rKxAfhLXYsqBRE5&ust=1614169687881000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNj-v6OJgO8CFQAAAAAdAAAAABAD" alt= "background">
 </body>
 
 </html>

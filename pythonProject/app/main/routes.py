@@ -7,7 +7,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
-    return render_template("index.html")
+    return redirect(url_for('main.challenge'))
 
 
 @main.route('/ajout_images', methods=['POST'])
@@ -21,3 +21,7 @@ def ajout_images():
         })
 
     return redirect(url_for('main.index'))
+
+@main.route('/challenge')
+def challenge():
+    return render_template("challenge.html")
