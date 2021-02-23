@@ -1,0 +1,15 @@
+body{
+    margin: 0%;
+}
+.navbarre {
+    border:solid #005c84;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #005c84;
+    margin: 0%;
+}
+
+.logo{
+    width: 90px;
+}
